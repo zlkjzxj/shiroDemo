@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 1234!@#$qwerQWER
+    url: jdbc:mysql://119.29.115.175:3306/shiro?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /jsps/
+      suffix: .jsp
+
+
+mybatis:
+  typeAliasesPackage: com.walle.shiroDemo.model
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000
+
